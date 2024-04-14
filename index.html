@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Search Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="logo">
-            <div class="container">
-                <p><span>Watch</span> Movies</p>
+      <div class="logo">
+        <div class="container">
+          <p><span>Watch</span> Movies</p>
+        </div>
+      </div>
+
+    <div class="search-container">
+      <div class="search-element">
+        <h3>Search Movie:</h3>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search Movie Title ..."
+          id="movie-search-box"
+        />
+        <div class="search-list" id="search-list">
+            <div class="search-list-item">
+                <div class="search-item-thumbnail">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNGVkNDc3NjUtNTY5ZS00ZmE0LWE3YzctMDk2OTRlNTdiZWQwXkEyXkFqcGdeQXVyMTU3NDg0OTgx._V1_.jpg" alt="">
+                </div>
+                <div class="search-item-info">
+                    <h3>Suzume</h3>
+                    <p>2023</p>
+                </div>
             </div>
         </div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="result-container">
+            <div class="result-grid" id="result-grid">
+                <div class="movie-poster">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNGVkNDc3NjUtNTY5ZS00ZmE0LWE3YzctMDk2OTRlNTdiZWQwXkEyXkFqcGdeQXVyMTU3NDg0OTgx._V1_.jpg" alt="movie poster">
+                </div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Suzume</h3>
+                    <ul class="movie-misc-info">
+                        <li class="year">Ratings: PG-13</li>
+                        <li class="rated">Year: 2023</li>
+                        <li class="released">Released: 14 April 2023</li>
+                    </ul>
+                    <p class="genre"><b>Genre:</b> Action, Adventure, Comedy, Fantasy</p>
+                    <p class="writer"><b>Writer:</b> Chieko Misaka, Koichiro Ito, Hayao Miyazaki</p>
+                    <p class="actors"><b>Actors:</b> Nanoka Hara, Hokuto Matsumura, Kamiki Ryunosuke</p>
+                    <p class="plot"><b>Plot:</b> As the skies turn red and the planet trembles, Japan stands on the brink of disaster. However, a determined teenager named Suzume sets out on a mission to save her country. Able to see supernatural forces that others cannot, it's up to her to close the mysterious doors that are spreading chaos across the land. A perilous journey awaits as the fate of Japan rests on her shoulders.</p>
+                    <p class="language"><b>Language:</b> Japanese</p>
+                    <p class="awards"><b><i class="fas fa-award"></i></b> Japan Academy Prize for Outstanding Achievement in Music</p>
+                </div>
+            </div>
+        </div>
+      </div>
 
     </div>
-
-</body>
+  </body>
 </html>
