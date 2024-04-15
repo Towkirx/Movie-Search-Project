@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -29,17 +29,17 @@
           type="text"
           class="form-control"
           placeholder="Search Movie Title ..."
-          id="movie-search-box"
+          id="movie-search-box" onkeyup="findMovies()"
         />
         <div class="search-list" id="search-list">
             <div class="search-list-item">
-                <div class="search-item-thumbnail">
-                    <img src="https://m.media-amazon.com/images/M/MV5BNGVkNDc3NjUtNTY5ZS00ZmE0LWE3YzctMDk2OTRlNTdiZWQwXkEyXkFqcGdeQXVyMTU3NDg0OTgx._V1_.jpg" alt="">
+                <!-- <div class="search-item-thumbnail">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNGVkNDc3NjUtNTY5ZS00ZmE0LWE3YzctMDk2OTRlNTdiZWQwXkEyXkFqcGdeQXVyMTU3NDg0OTgx._V1_.jpg">
                 </div>
                 <div class="search-item-info">
                     <h3>Suzume</h3>
                     <p>2023</p>
-                </div>
+                </div> -->
             </div>
         </div>
       </div>
@@ -54,8 +54,8 @@
                 <div class="movie-info">
                     <h3 class="movie-title">Suzume</h3>
                     <ul class="movie-misc-info">
-                        <li class="year">Ratings: PG-13</li>
-                        <li class="rated">Year: 2023</li>
+                        <li class="year">Year: 2023</li>
+                        <li class="rated">Ratings: PG-13</li>
                         <li class="released">Released: 14 April 2023</li>
                     </ul>
                     <p class="genre"><b>Genre:</b> Action, Adventure, Comedy, Fantasy</p>
