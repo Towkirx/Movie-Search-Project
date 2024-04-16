@@ -3,7 +3,7 @@
     --md-dark-color: #1d1d1d;
     --dark-color: #171717;
     --light-dark-color: #292929;
-    --pink-color: #4fc2dc;
+    --pink-color: #ffffff;
 }
 
 * {
@@ -16,6 +16,20 @@ body {
     font-family: "Inter", sans-serif;
     min-height: 100vh;
     background: #0c192c;
+    
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(https://images.hdqwalls.com/wallpapers/cosmic-watch-girl-moon-and-rabbit-companions-v2.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(https://www.hdwallpapers.in/download/anime_girl_colorful_sky_grass_field_bokeh_background_hd_anime_girl-HD.jpg);
+    opacity: 1;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed; 
+    
 }
 
 a {
@@ -75,7 +89,7 @@ img {
 }
 
 .search-container {
-    background-color: var(--md-dark-color);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 180px;
     display: flex;
     align-items: center;
@@ -104,6 +118,7 @@ img {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    opacity: 1;
 }
 
 .search-element h3{
@@ -172,20 +187,19 @@ img {
     opacity: 0.6;
 }
 
-/* .wrapper {
-    animation: transitionIn 2s;
+
+.wrapper {
+    animation: transitionIn 3s;
 }
 
 @keyframes transitionIn {
     from {
         opacity: 0;
-        transform: translatey(-600px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
-} */
+}
 
 /*
 
@@ -257,7 +271,7 @@ MOVIE RESULTS
 }
 
 .movie-info .rated{
-    background-color: var(--pink-color);
+    background-color: rgba(29, 29, 29, 0.5);
     padding: 0.4rem;
     margin: 0 0.4rem;
     border-radius: 3px;
@@ -275,7 +289,7 @@ MOVIE RESULTS
 }
 
 .movie-info .genre {
-    background-color: var(--light-dark-color);
+    background-color: rgba(29, 29, 29, 0.5);
     display: inline-block;
     padding: 0.5rem;
     border-radius: 3px;
@@ -327,6 +341,13 @@ MOVIE RESULTS
     .movie-misc-info li:nth-child(2) {
         margin: 0.8rem 0;
     }
+    .movie-info .plot, .writer, .actors, .released, .year, .language, .movie-title {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 3px;
+    }
+
 }
 
 @media(min-width: 800px) {
@@ -356,3 +377,5 @@ MOVIE RESULTS
         margin-left: 0;
     }
 }
+
+
