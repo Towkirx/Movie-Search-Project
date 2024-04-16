@@ -83,3 +83,9 @@ function displayMovieDetails(details){
         <p class="awards"><b><i class="fas fa-award"></i></b> ${details.Awards}</p>
     </div>`
 }
+
+window.addEventListener('click', (event) => {
+    if(event.target.className != "form-control") {
+        searchList.classList.add('hide-search-list');
+    }
+})

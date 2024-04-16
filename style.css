@@ -3,7 +3,7 @@
     --md-dark-color: #1d1d1d;
     --dark-color: #171717;
     --light-dark-color: #292929;
-    --pink-color: #d411aa;
+    --pink-color: #4fc2dc;
 }
 
 * {
@@ -14,6 +14,8 @@
 
 body {
     font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    background: #0c192c;
 }
 
 a {
@@ -28,12 +30,48 @@ img {
 .wrapper {
     min-height: 100vh;
     background-color: var(--dark-color);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .wrapper .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+.bubbles span {
+    position: relative;
+    background: #f3f3f3;
+    margin: 0 10px;
+    width: 30px;
+    height: 7px;
+    border-radius: 50%;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(200s / var(--i));
+
+}
+.bubbles span:nth-child(even) {
+    background: #3f327750;
+    box-shadow: 0 0 0 10px #00000044,
+    0 0 50px #f0e00591,
+    0 0 100px #0df782;
+    opacity: 0.5;
+}
+@keyframes animate {
+    0% {
+        transform: translateY(9vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
 }
 
 .search-container {
@@ -133,6 +171,21 @@ img {
     font-weight: 600;
     opacity: 0.6;
 }
+
+/* .wrapper {
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translatey(-600px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
 
 /*
 
